@@ -1,0 +1,220 @@
+.logo {
+    margin-left: 10%;
+    position: absolute;
+    z-index: 2000;
+    width: 80px;
+    height: 75px;
+    background: #cdcdcd;
+    text-align: center;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.loading-text {
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    color: rgba(5, 6, 27, 1);
+    font-size: 18px;
+    text-align: center;
+    background: #cdcdcd;
+    text-align: center;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.logo-image {
+    background: url(../images/logo.png) no-repeat;
+    z-index: 2000;
+    width: 80px;
+    height: 75px;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    text-align: center;
+    color: #fff;
+    margin:0 auto;
+}
+
+/* WebKit и Opera */
+@-webkit-keyframes spinner {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateY(-360deg);
+    }
+}
+
+/* Все остальные браузеры */
+@keyframes spinner {
+    from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    to {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+    }
+}
+
+.spinner {
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+
+    animation-name: spinner;  /* указываем на ключевые кадры анимации с названием "spinner" */
+    animation-timing-function: linear; /* функция синхронизации, с помощью которой будут происходить преобразования */
+    animation-iteration-count: infinite; /* количество повторов анимации. "infinite" - значит бесконечно */
+    animation-duration: 6s; /* длительность анимации */
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d; /* указываем что это 3D преобразование */
+}
+
+@media all and (min-width: 2070px) {
+    .logo_bg div {
+        margin-left: calc(50% - 680px);
+    }
+}
+
+@media all and (max-width: 1670px) {
+    .logo_bg div {
+        margin-left: 1%;
+    }
+}
+
+
+.logo_bg div:hover {
+    height: 80px !important;
+    padding-top: 5px;
+}
+
+#top-main-menu.navbar-default .navbar-brand {
+    color: rgba(232, 228, 156, 1);
+}
+#top-main-menu.navbar-default {
+    font-size: 18px;
+    background-color: rgba(5, 6, 27, 1);
+    border: 0px;
+    min-height: 60px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+#top-main-menu.navbar-default .navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgba(232, 228, 156, 1);
+    background-color: rgba(5, 6, 27, 1);
+}
+#top-main-menu.navbar-default .navbar-nav>li>a:hover,
+#top-main-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(232, 228, 156, 1);
+    background-color: rgba(5, 6, 27, 1);
+}
+#top-main-menu.navbar-default .navbar-nav>.active>a,
+#top-main-menu.navbar-default .navbar-nav>.active>a:hover,
+#top-main-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(232, 228, 156, 1);
+    background-color: rgba(5, 6, 27, 1);
+    background-position: 0 0 !important;
+}
+#top-main-menu.navbar-default .navbar-toggle {
+    border-color: #05061b;
+}
+#top-main-menu.navbar-default .navbar-toggle:hover,
+#top-main-menu.navbar-default .navbar-toggle:focus {
+    background-color: #05061b;
+}
+#top-main-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #d3d3d3;
+}
+#top-main-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#top-main-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #d3d3d3;
+}
+
+#top-main-menu.navbar-default .navbar-nav>li {
+    background-position: 0 -63px;
+    min-width: 130px;
+    text-align: center;
+}
+
+#top-main-menu.navbar-default .navbar-nav>li>a:hover {
+    background-position: 0 0;
+}
+
+#top-main-menu.navbar-default .navbar-nav>.blue>a {
+    background: url(../images/blue.png) repeat-x;
+    background-position: inherit;
+}
+
+#top-main-menu.navbar-default .navbar-nav>.red>a {
+    background: url(../images/red.png) repeat-x;
+    background-position: inherit;
+}
+
+#top-main-menu.navbar-default .navbar-nav>.green>a {
+    background: url(../images/green.png) repeat-x;
+    background-position: inherit;
+}
+
+#top-main-menu.navbar-default .navbar-nav>.underline>a:hover {
+    text-decoration: underline;
+}
+
+#top-main-menu.navbar-default .navbar-nav>li>a>i {
+    font-size: 20px;
+}
+
+#top-main-menu.navbar-default .navbar-nav>.blue>a>i {
+    color: rgba(13, 67, 112, 1);
+}
+
+#top-main-menu.navbar-default .navbar-nav>.red>a>i {
+    color: #712123;
+}
+
+#top-main-menu.navbar-default .navbar-nav>.green>a>i {
+    color: #04621D;
+}
+
+#top-main-menu.navbar-default .navbar-nav>li>a:hover>i,
+#top-main-menu.navbar-default .navbar-nav>.active>a>i {
+    color: rgba(232, 228, 156, 1);
+}
+
+#loading-bar {
+    background: #fff;
+    height: 5px;
+    width: 100%;
+}
+
+#loading-progress {
+    background: #fff;
+    height: 5px;
+    width: 100%;
+}
+
+#registration_form_block {
+    display: none;
+}

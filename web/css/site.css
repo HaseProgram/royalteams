@@ -1,25 +1,222 @@
 html,
 body {
+    background-position: absolute;
+    background: url('../images/bg_index.jpg') no-repeat center center fixed;
+    background-attachment: fixed;
+    background-color: #379aa0;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100%;
 }
 
+a {
+    -moz-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    border: none;
+    outline: none !important;
+}
+
+ul,li {
+    border: none;
+}
+
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input,select {
+    outline: none !important;
+}
+
+input,select:focus {
+    outline: none !important;
+}
+
+form {
+    height: 100%;
+}
+
+.animate {
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+
+.modal-dialog {
+    margin: 70px auto;
+}
+
 .wrap {
-    min-height: 100%;
     height: auto;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
+    margin: 0 auto;
+    padding: 0px;
 }
 
 .wrap > .container {
+    min-height: 700px;
+    background: #d3d3d3;
     padding: 70px 15px 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    height: auto;
+}
+
+.follow {
+    margin-top: 5px;
+}
+
+.follow i {
+    font-size: 20px;
 }
 
 .footer {
-    height: 60px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
+    min-height: 260px;
+    height: auto;
     padding-top: 20px;
+    color: rgba(232, 228, 156, 1);
 }
+
+.simple, .simple:hover {
+    color: rgba(232, 228, 156, 1);
+}
+
+.copyright {
+    padding: 10px !important;
+    color: rgba(5, 6, 27, 1);
+    min-height: 40px;
+    padding: 5px;
+    background-color: #cdcdcd;
+    text-align: center;
+    margin-bottom: 30px;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.inerror {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 87%;
+    color: #880000;
+    display: none;
+}
+
+.insuccess {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 87%;
+    color: #00aa00;
+    display: none;
+}
+
+.has-error>.inerror {
+    display: inline-block !important;
+    z-index: 10000;
+}
+
+.has-error input, .has-success input {
+    padding-right: 13%;
+}
+
+.has-success>.insuccess {
+    display: inline-block !important;
+    z-index: 10000;
+}
+
+#login-modal>div {
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+
+.bd_form {
+    cursor: pointer;
+    width: 30% !important;
+    float: left;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
+}
+
+.bd_form>option {
+    z-index: 10000;
+    border-top: 1px solid #B0BECA;
+    display: block;
+    padding: 4px 6px;
+    color: #353D44;
+    cursor: pointer;
+}
+
+.bd_form>option:hover {
+    background-color: #D5E5F4 !important;
+    color: #161A1C !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
+select,option:hover {
+    background-color: #D5E5F4;
+    color: #161A1C;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.mr5 {
+    margin-right: 5%;
+}
+
+
+.ui-autocomplete {
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    width: 218px;
+    border: 1px solid #B0BECA;
+    max-height: 350px;
+    overflow-x: hidden;
+    z-index: 10000;
+    position: relative !important;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+.ui-autocomplete .ui-menu-item {
+    border-top: 1px solid #B0BECA;
+    display: block;
+    padding: 4px 6px;
+    color: #353D44;
+    cursor: pointer;
+}
+.ui-autocomplete .ui-menu-item:first-child {
+    border-top: none;
+}
+.ui-autocomplete .ui-menu-item.ui-state-focus {
+    background-color: #D5E5F4;
+    color: #161A1C;
+}
+
+
+
+
+
 
 .jumbotron {
     text-align: center;
@@ -35,6 +232,12 @@ body {
     color: #c55;
     font-style: italic;
 }
+
+
+
+
+
+
 
 /* add sorting icons to gridview sort links */
 a.asc:after, a.desc:after {

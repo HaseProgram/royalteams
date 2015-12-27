@@ -7,6 +7,12 @@ use yii\helpers\Html;
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<style>
+    #loading-progress,
+    footer {
+        background-color: #712123;
+    }
+</style>
 <div class="site-about">
     <h1><?= Html::encode($this->title) ?></h1>
 

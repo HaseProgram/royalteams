@@ -1,9 +1,15 @@
 <?php
 
 /* @var $this yii\web\View */
-
-$this->title = 'My Yii Application';
+use app\assets\IndexAsset;
+$this->title = 'Welcome to ROYAL team';
 ?>
+<style>
+    #loading-progress,
+    footer {
+        background-color: rgba(13, 67, 112, 1);
+    }
+</style>
 <div class="site-index">
 
     <div class="jumbotron">
